@@ -1,0 +1,56 @@
+@charset "UTF-8";
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+#navigator{
+	text-align: center;
+}
+
+#view {
+	position: relative;
+	max-width: 2500px;
+	text-align: center;
+}
+
+#dashboard {
+	float: left;
+	width: 1100px;
+	background-color: blue;
+	text-align: center;
+}
+
+#side {
+	float: left;
+	margin-left: 50px;
+	width: 600px;
+	height: auto;
+	text-align: center;
+	border: 1px solid;
+}
+
+	#friendsList{
+		display: none;
+	}
+
+#icon {
+	position: absolute;
+}
+
+#icon a {
+	text-decoration: none;
+}
+
+#icon li {
+	list-style-type: none;
+	float: left;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+#profile {
+	position: relative;
+	height: 700px;
+	margin-top: 90px;
+}

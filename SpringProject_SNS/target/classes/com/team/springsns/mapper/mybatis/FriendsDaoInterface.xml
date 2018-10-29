@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace = "com.team.springsns.dao.FriendsDaoInterface">
+	
+	<select id="getFriendsList" resultType="com.team.springsns.model.FriendsListView">
+		select m.userno, m.userid, m.username, f.followingno from memberreg_tb m, follow_tb f
+		where m.userno = f.followingno
+		and f.userno = 1
+	</select>
+	
+	<select id="getFriendPage" resultType="com.team.springsns.model.MemberInfo">
+		select * from memberreg_tb where userNo = #{userNo}
+	</select>
+	
+
+</mapper>
